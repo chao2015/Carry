@@ -45,8 +45,6 @@ void maxHeapify(T& elem,int size,int parent){
 	if(lchild<size && elem[parent]<elem[lchild])
 		//swap(elem[parent],elem[lchild]);
 		mySwap(elem[parent],elem[lchild]);
-
-
 }
 
 //整理节点,小根堆
