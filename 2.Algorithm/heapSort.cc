@@ -17,9 +17,9 @@ void mySwap(T& elem1,T& elem2){
 	T temp=elem1;
 	elem1=elem2;
 	elem2=temp;
-	//elem1=elem1^elem2;
-	//elem2=elem1^elem2;
-	//elem1=elem1^elem2;
+	//elem1=elem1^elem2;//不适用的情况：
+	//elem2=elem1^elem2;//1.T类没有重载^方法，如string类；
+	//elem1=elem1^elem2;//2.可能会传递相同的参数时(不是值相同，而是相同的变量如elem1,elem1)时。
 }
 //大根堆
 template <typename T>
