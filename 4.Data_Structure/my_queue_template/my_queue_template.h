@@ -90,7 +90,7 @@ bool MyQueue<T>::Dequeue(T & element) {
 template <class T>
 void MyQueue<T>::QueueTraverse() {
 	for(int i = m_iHead; i < m_iHead + m_iQueueLength; ++i) {
-		cout << m_pQueue[i] << " ";
+		cout << m_pQueue[i % m_iQueueCapacity] << " ";
 	}
 	cout << endl;
 }
